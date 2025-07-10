@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iGreen Energy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #006400, #008000);
+      color: white;
+      text-align: center;
+    }
+    img.logo {
+      max-width: 200px;
+      margin-top: 20px;
+    }
+    h1 {
+      margin: 20px 0 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 18px;
+      margin: 20px 0;
+    }
+    ul li {
+      margin: 10px 0;
+    }
+    .btn {
+      background-color: #ffcc00;
+      color: #000;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 20px 0;
+    }
+    .form-container {
+      background: white;
+      color: black;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      border-radius: 10px;
+      display: none;
+    }
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .form-container button {
+      background-color: #ffcc00;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .footer {
+      margin: 30px 0;
+      font-size: 14px;
+    }
+    .footer a {
+      color: #ffccff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- LOGO -->
+  <img src="logo.png" alt="Logo iGreen" class="logo" />
+
+  <!-- Título -->
+  <h1>Faça seu <strong>CADASTRO AGORA</strong> como <strong>CONSUMIDOR</strong></h1>
+
+  <!-- Benefícios -->
+  <ul>
+    <li>💡 Economize até 15% na conta de energia</li>
+    <li>⚡ Sem instalação</li>
+    <li>🏡 Sem investimento</li>
+    <li>🟪 100% digital</li>
+  </ul>
+
+  <!-- Botão -->
+  <button class="btn" onclick="document.getElementById('form').style.display='block'">
+    Quero meu desconto!
+  </button>
+
+  <!-- Formulário -->
+  <div id="form" class="form-container">
+    <h3>Preencha para garantir seu desconto</h3>
+    <form action="mailto:luana_thompson@myyahoo.com" method="POST" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Nome completo" required />
+      <input type="email" name="email" placeholder="E-mail" required />
+      <input type="tel" name="telefone" placeholder="Telefone" required />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Rodapé -->
+  <div class="footer">
+    <a href="https://wa.me/555492093553" target="_blank">💬 Fale no WhatsApp</a>
+    <a href="https://www.facebook.com/profile.php?id=61577981035968&locale=pt_BR" target="_blank">🔥 Visite nosso Facebook</a>
+  </div>
+
+</body>
+</html>
