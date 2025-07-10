@@ -2,32 +2,45 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>iGreen Energy</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #006400, #008000);
       color: white;
       text-align: center;
+      background: linear-gradient(-45deg, #006400, #008000, #32CD32, #228B22);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s ease infinite;
     }
+
+    @keyframes gradientAnimation {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
     img.logo {
       max-width: 200px;
       margin-top: 20px;
     }
+
     h1 {
       margin: 20px 0 10px;
     }
+
     ul {
       list-style: none;
       padding: 0;
       font-size: 18px;
       margin: 20px 0;
     }
+
     ul li {
       margin: 10px 0;
     }
+
     .btn {
       background-color: #ffcc00;
       color: #000;
@@ -38,6 +51,7 @@
       cursor: pointer;
       margin: 20px 0;
     }
+
     .form-container {
       background: white;
       color: black;
@@ -47,6 +61,7 @@
       border-radius: 10px;
       display: none;
     }
+
     .form-container input {
       width: 100%;
       padding: 10px;
@@ -54,6 +69,7 @@
       border-radius: 5px;
       border: 1px solid #ccc;
     }
+
     .form-container button {
       background-color: #ffcc00;
       border: none;
@@ -63,10 +79,12 @@
       font-weight: bold;
       cursor: pointer;
     }
+
     .footer {
       margin: 30px 0;
       font-size: 14px;
     }
+
     .footer a {
       color: #ffccff;
       text-decoration: none;
