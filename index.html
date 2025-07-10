@@ -58,8 +58,28 @@
     <li>🟪 100% digital</li>
   </ul>
 
-  <a href="https://igreenernegialimpa.com.br" class="btn" target="_blank">
-    Quero meu desconto!
+  <button onclick="document.getElementById('formulario').style.display='block'" style="margin-top: 20px;">
+  Quero meu desconto!
+</button>
+<div id="formulario" style="display: none; margin-top: 20px;">
+  <form action="https://formsubmit.co/seu-email@email.com" method="POST" style="background-color: #fff; padding: 20px; border-radius: 8px; max-width: 400px; margin: auto;">
+    <h3 style="color: #006400;">Preencha para garantir seu desconto</h3>
+
+    <label>Nome:</label><br>
+    <input type="text" name="nome" required style="width: 100%; padding: 8px;"><br><br>
+
+    <label>E-mail:</label><br>
+    <input type="email" name="email" required style="width: 100%; padding: 8px;"><br><br>
+
+    <label>Telefone:</label><br>
+    <input type="tel" name="telefone" required style="width: 100%; padding: 8px;"><br><br>
+
+    <button type="submit" style="background-color: #facc15; padding: 10px 20px; border: none; border-radius: 5px;">
+      Enviar
+    </button>
+  </form>
+</div>
+
     <div style="margin-top: 30px;">
   <a href="https://wa.me/5554992093553" target="_blank" style="margin-right: 15px; text-decoration: none;">
     📱 Fale no WhatsApp
