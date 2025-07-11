@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>iGreen Energy</title>
   <style>
     body {
@@ -10,12 +10,12 @@
       font-family: Arial, sans-serif;
       color: white;
       text-align: center;
-      background: linear-gradient(-45deg, #006400, #008000, #228B22, #32CD32);
+      background: linear-gradient(-45deg, #a8e6cf, #dcedc1, #a8e6cf, #dcedc1);
       background-size: 400% 400%;
-      animation: gradientAnimation 15s ease infinite;
+      animation: gradientMove 15s ease infinite;
     }
 
-    @keyframes gradientAnimation {
+    @keyframes gradientMove {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
@@ -86,15 +86,16 @@
     }
 
     .footer a {
-      color: #ffccff;
+      color: #000;
       text-decoration: none;
       margin: 0 10px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-  <!-- LOGO -->
+  <!-- Logo -->
   <img src="logo.png" alt="Logo iGreen" class="logo" />
 
   <!-- Título -->
